@@ -104,7 +104,7 @@ import Rolling from "./rolling/Rolling.js";
 
         ComputerMessage
             .add(`My number is ${userRolling.computerValue}.`)
-            .add(`KEY=${userRolling.key})`)
+            .add(`KEY=${userRolling.key}`)
             .add(`The fair number generation result is ${userRolling.userValue} + ${userRolling.computerValue} = ${userRolling.modulo} (mod ${userDice.length}).`)
             .add(`Your roll result is ${userRolling.result}.`)
             .print();
@@ -162,7 +162,7 @@ import Rolling from "./rolling/Rolling.js";
 
         ComputerMessage
             .add(`My number is ${userRolling.computerValue}.`)
-            .add(`KEY=${userRolling.key})`)
+            .add(`KEY=${userRolling.key}`)
             .add(`The fair number generation result is ${userRolling.userValue} + ${userRolling.computerValue} = ${userRolling.modulo} (mod ${userDice.length}).`)
             .add(`Your roll result is ${userRolling.result}.`)
             .print();
