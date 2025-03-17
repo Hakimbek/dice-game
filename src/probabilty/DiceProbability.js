@@ -16,7 +16,7 @@ export default class DiceProbability extends Dices {
             const row = [a.join(',')];
 
             for (const b of this.dices) {
-                const count = this.countWins(a, b);
+                const count = this.#countWins(a, b);
                 const probability = count / (a.length * b.length);
                 row.push(probability);
             }
@@ -27,7 +27,7 @@ export default class DiceProbability extends Dices {
         return this;
     }
 
-    countWins(a, b) {
+    #countWins(a, b) {
         let n = 0;
 
         for (let aElement of a) {
